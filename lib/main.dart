@@ -12,7 +12,16 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Flutter Basic Day 1"),
         ),
-        body: Center(child: Text("Day 1 : Learn basic flutter")),
+        body: Center(
+            child: Container(
+                color: Colors.red,
+                height: 50,
+                width: 150,
+                child: Text(
+                  "Day 1 : Learn basic flutter",
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ))),
       ),
     );
   }
